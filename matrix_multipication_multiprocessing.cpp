@@ -55,6 +55,22 @@ int main()
 		return 0;
 	}
 	
+	for(int i = 0 ; i < row1 ; ++i)
+	{
+		for(int j = 0 ; j < column1 ; ++j)
+		{
+			A[i][j] = rand() % 5 + 1;
+		}
+	}
+	
+	for(int i = 0 ; i < row2 ; ++i)
+	{
+		for(int j = 0 ; j < column2 ; ++j)
+		{
+			B[i][j] = rand() % 5 + 1;
+		}
+	}
+	
 	int num_of_elements = row1 * column2;
 	int degree_count = 0;
 	while(num_of_elements > 0)
